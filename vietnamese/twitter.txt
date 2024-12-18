@@ -1,0 +1,3 @@
+Tôi hiểu rằng bạn muốn tôi tạo một bài đăng Twitter dựa trên văn bản bạn cung cấp. Dưới đây là một bài đăng Twitter mẫu:
+
+"Khám phá cách cải thiện hiệu suất của Retrieval Augmented Generation (RAG) với kỹ thuật reranking! Cette technique đơn giản nhưng mạnh mẽ giúp tăng cường chất lượng và giảm thiểu tiếng ồn trong quá trình tạo nội dung. #RAG #RetrievalAugmentedGeneration #NLP"

@@ -1,0 +1,5 @@
+* 🔍 Tìm hiểu về rerankers và vai trò của chúng trong việc cải thiện hiệu suất của Retrieval Augmented Generation RAG
+* 📊 So sánh kết quả gốc và kết quả sau khi rerank để thấy sự khác biệt về thứ hạng và chất lượng của tài liệu
+* 💡 Hiểu được cách thức hoạt động của hai giai đoạn tìm kiếm và tái sắp xếp trong việc tối ưu hóa hiệu suất của RAG
+* 🚀 Tìm hiểu về các phương pháp và kỹ thuật mới nhất trong lĩnh vực này như Lost in the Middle và Sentence BERT
+* 📝 Tóm tắt các tài liệu tham khảo quan trọng như Introducing 100K Context Windows và Lost in the Middle
