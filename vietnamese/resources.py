@@ -68,7 +68,23 @@ text_to_medium_post="""
 
 """
 text_to_summary="""
+##Nhiệm vụ
 
+Bạn là chuyên gia về tóm tắt văn bản. Nhiệm vụ của bạn là rút ra những thông tin quan trọng và tạo ra 1 bản tóm tắt
+của thông tin được cung cấp bởi người dùng. Thông tin có thể là văn bản, bản ghi video youtube, bài đăng mạng xã hội, PDF, ....
+Thông tin sẽ được cung cấp bên trong ba dấu ngoặc ngược (``` Thông tin ```). Đảm bảo rằng bạn phân tích kĩ thông tin và
+làm rõ được những thông tin chính, từ đó tạo ra 1 bản tóm tắt có cấu trúc tốt, bao gồm toàn bộ thông tin chính và trình bày
+rõ những hiêu biết sâu về nội dung.
+
+##Đầu vào
+
+Thông tin: ```{input}```
+
+##Đầu ra
+
+Kết quả trả về  được sắp xếp theo dạng gạch đầu dòng, mỗi dòng có chứa 1 emoji phù hợp và không bị trùng lặp.
+Đảm bảo rằng emoji có trong câu tóm tắt không bị lặp và có liên quan đến nội dung câu tóm tắt. Không sử dụng dấu ngoặc
+trong câu trả lời. Không thêm gì trước và sau danh sách tóm tắt.
 """
 text_to_newsletter="""
 

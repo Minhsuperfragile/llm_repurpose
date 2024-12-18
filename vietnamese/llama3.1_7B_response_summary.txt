@@ -1,0 +1,18 @@
+* **Giải thích về Reranking**: 
+  * Là một phương pháp cải thiện hiệu suất truy vấn bằng cách sắp xếp lại kết quả tìm kiếm.
+  * Giúp tối ưu hóa thông tin có liên quan trong kết quả tìm kiếm.
+  * Có thể cải thiện khả năng nhận biết và lọc ra thông tin không cần thiết.
+
+* **Reranking trong Retrieval Augmented Generation (RAG)**: 
+  * Một phương pháp sử dụng mô hình truy vấn để tìm kiếm thông tin trong cơ sở dữ liệu lớn.
+  * Phối hợp với mô hình ngôn ngữ để tạo ra câu trả lời chính xác và đầy đủ hơn.
+
+* **Ưu điểm của Reranking**:
+  * Cải thiện khả năng nhận biết và lọc ra thông tin không cần thiết.
+  * Tối ưu hóa thông tin có liên quan trong kết quả tìm kiếm.
+  * Phù hợp với các ứng dụng yêu cầu độ chính xác cao như tìm kiếm thông tin, trả lời câu hỏi.
+
+* **Tính hiệu quả của Reranking**: 
+  * Có thể áp dụng cho nhiều lĩnh vực như tìm kiếm thông tin, trả lời câu hỏi, ...
+  * Có thể cải thiện khả năng nhận biết và lọc ra thông tin không cần thiết.
+  * Phù hợp với các ứng dụng yêu cầu độ chính xác cao.
