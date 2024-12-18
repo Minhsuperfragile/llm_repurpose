@@ -1,0 +1,19 @@
+1/10  RAG:  Sounds amazing, right?  But often, it falls short.  Why? Let's dive into the surprisingly simple fix. #RAG #LLM #AI #Search
+
+2/10 The problem?  LLMs have limited "context windows."  Trying to cram too many documents in makes them less accurate. Think of it like information overload! #AI #MachineLearning
+
+3/10  The solution?  Rerankers! 🚀 These models prioritize the *most* relevant documents before feeding them to the LLM.  Smart, right? #AI #Retrieval
+
+4/10 It's a two-stage process:  First, a quick search grabs many documents. Then, the reranker picks the best ones. Think of it as a highly efficient filter. #AI #Efficiency
+
+5/10  Why are rerankers better? They analyze documents *in context* with your query.  No more information loss from the initial compression! #AI #Data
+
+6/10  Think of it like this:  A quick, broad search followed by a precise edit.  Much more accurate than a single, less-focused search. #AI #Optimization
+
+7/10 Implementing this is easier than you think!  We'll use Pinecone for vector databases and a cool reranking model.  (More details in the thread!) #Pinecone #VectorDB
+
+8/10 We'll use the `multilingual-e5-large` model for embeddings and a custom reranker.  It's a powerful combo for supercharged search results. #NLP #Embedding
+
+9/10  Ready to boost your RAG pipeline?  This two-stage approach maximizes both retrieval and LLM recall, leading to dramatically better results! #RAG #Improvement
+
+10/10  Want to learn more about building this?  Check out the full ebook and video companion! (link in bio)  Let's build better AI together! #AI #LearnToCode

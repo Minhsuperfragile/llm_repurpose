@@ -1,0 +1,19 @@
+* 📚 Retrieval Augmented Generation (RAG) often underperforms expectations due to limitations in retrieving and utilizing relevant information.
+
+* 🔎  Vector search, while fast, loses information, causing relevant documents to be ranked lower than less relevant ones.
+
+* ⬆️ Increasing the number of retrieved documents (top_k) improves recall but exceeds LLMs' context window limits.
+
+* ⚠️  "Context stuffing" (exceeding the context window) harms LLM recall and performance.
+
+* ⚖️ The solution: use rerankers to maximize retrieval recall (retrieve many documents) and then maximize LLM recall (select the most relevant documents for the LLM).
+
+* 🤖 Rerankers (cross-encoders) score query-document pairs, reordering documents by relevance.  This is a two-stage process: fast retrieval followed by slower, more accurate reranking.
+
+* 🚀  Rerankers are slower than bi-encoders but far more accurate because they avoid information loss and consider query context.
+
+* ⚙️  Bi-encoders pre-compute document embeddings, losing information and lacking query context. Rerankers process queries and documents together at query time, maintaining more information.
+
+* 📊 Implementing two-stage retrieval involves embedding data with a bi-encoder (e.g., multilingual-e5-large), indexing it in a vector database (e.g., Pinecone), and then using a reranker (e.g., bge-reranker-v2-m3) to reorder results.
+
+* ✨ Reranking significantly improves RAG performance by prioritizing highly relevant information, reducing noise for the LLM.
