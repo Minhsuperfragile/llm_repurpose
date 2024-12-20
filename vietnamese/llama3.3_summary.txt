@@ -1,0 +1,5 @@
+* 🌟 Reranking là một phương pháp đơn giản để cải thiện hiệu suất của Retrieval Augmented Generation (RAG) hoặc bất kỳ pipeline dựa trên truy vấn nào khác.
+* 📚 Một hệ thống truy vấn hai giai đoạn cho phép chúng ta tận dụng lợi thế của cả hai thế giới, cho phép tìm kiếm ở quy mô lớn đồng thời duy trì hiệu suất chất lượng.
+* 💻 Reranking giúp loại bỏ thông tin không liên quan và giữ lại thông tin hữu ích, dẫn đến hiệu suất tốt hơn trong việc trả lời câu hỏi.
+* 🤖 Hệ thống truy vấn hai giai đoạn bao gồm truy vấn ban đầu và xếp hạng lại để cải thiện độ chính xác của kết quả.
+* 📊 Reranking có thể được sử dụng với các mô hình ngôn ngữ khác nhau để cải thiện hiệu suất tổng thể của hệ thống.
