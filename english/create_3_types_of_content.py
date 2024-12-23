@@ -1,9 +1,11 @@
 from SimplerLLM.tools.generic_loader import load_content
 from SimplerLLM.language.llm import LLM, LLMProvider
-from vietnamese.resources import text_to_x_thread, text_to_blog_post, text_to_medium_post, text_to_summary, text_to_newsletter, format_to_json
+from resources import text_to_x_thread, text_to_blog_post, text_to_medium_post, text_to_summary, text_to_newsletter, format_to_json
 import os , json
+from dotenv import load_dotenv
+load_dotenv()
 
-os.environ['GEMINI_API_KEY'] = "AIzaSyDzUs85b_kCq4i850Uof05cEnNBqyArld8" # Variable name is important, don't change it
+#os.environ['GEMINI_API_KEY'] = "your key" # Variable name is important, don't change it
 
 LLM_PROVIDER = LLMProvider.GEMINI
 LLM_NAME = 'gemini-1.5-flash'
