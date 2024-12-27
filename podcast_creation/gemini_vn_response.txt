@@ -1,0 +1,56 @@
+{
+  "podcastTitle": "Chuyện Lào Cai: Quyết định số 17/2021/QĐ-UBND",
+  "episodeTitle": "Chi cục Trồng trọt và Bảo vệ thực vật: Vai trò và chức năng",
+  "guests": [
+    {
+      "name": "Ông Nguyễn Văn A",
+      "title": "Chi cục trưởng Chi cục Trồng trọt và Bảo vệ thực vật tỉnh Lào Cai"
+    }
+  ],
+  "script": [
+    {
+      "speaker": "Nguyễn",
+      "line": "Chào mừng ông Nguyễn Văn A, Chi cục trưởng Chi cục Trồng trọt và Bảo vệ thực vật tỉnh Lào Cai, đến với chương trình hôm nay. Ông có thể tóm tắt về Quyết định số 17/2021/QĐ-UBND được ban hành ngày 29/3/2021 không ạ?"
+    },
+    {
+      "speaker": "Ông Nguyễn Văn A",
+      "line": "Chào Nguyễn và thính giả! Quyết định này ban hành Quy định vị trí, chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Chi cục.  Nó cập nhật và thay thế các quyết định cũ, đảm bảo hoạt động của Chi cục phù hợp với luật hiện hành."
+    },
+    {
+      "speaker": "Nguyễn",
+      "line": "Vậy, vai trò chính của Chi cục là gì trong bối cảnh phát triển nông nghiệp của Lào Cai?"
+    },
+    {
+      "speaker": "Ông Nguyễn Văn A",
+      "line": "Chi cục là cơ quan chuyên môn giúp Sở Nông nghiệp và Phát triển nông thôn thực hiện quản lý nhà nước về trồng trọt, giống cây trồng, phân bón, bảo vệ thực vật, và kiểm dịch thực vật trên địa bàn tỉnh.  Chúng tôi tham mưu, tổ chức thực hiện, và giám sát các hoạt động này."
+    },
+    {
+      "speaker": "Nguyễn",
+      "line": "Hmm, nghe có vẻ bao quát.  Ông có thể cho ví dụ cụ thể về một số nhiệm vụ quan trọng của Chi cục không ạ?"
+    },
+    {
+      "speaker": "Ông Nguyễn Văn A",
+      "line": "Chắc chắn rồi. Ví dụ, chúng tôi tham mưu xây dựng kế hoạch sản xuất trồng trọt, hướng dẫn sử dụng phân bón hiệu quả, phòng chống dịch hại, và quản lý thuốc bảo vệ thực vật.  Chúng tôi cũng kiểm tra chất lượng giống cây trồng, đảm bảo an toàn thực phẩm..."
+    },
+    {
+      "speaker": "Nguyễn",
+      "line": "Thật thú vị!  Vậy về cơ cấu tổ chức, Chi cục được chia thành những phòng ban nào và mỗi phòng có nhiệm vụ gì?"
+    },
+    {
+      "speaker": "Ông Nguyễn Văn A",
+      "line": "Chi cục có ba phòng chính: Phòng Hành chính - Tổng hợp, Phòng Trồng trọt, và Phòng Bảo vệ và Kiểm dịch thực vật. Mỗi phòng có nhiệm vụ cụ thể liên quan đến lĩnh vực của mình, phối hợp chặt chẽ để đảm bảo hoạt động hiệu quả."
+    },
+    {
+      "speaker": "Nguyễn",
+      "line": "Chà, nghe rất chuyên nghiệp!  Ông có thể chia sẻ thêm về những thách thức mà Chi cục đang gặp phải không?"
+    },
+    {
+      "speaker": "Ông Nguyễn Văn A",
+      "line": "Uhh, một số thách thức lớn là cập nhật công nghệ mới, ứng phó với biến đổi khí hậu, và nâng cao nhận thức của người dân về các quy định.  Nhưng chúng tôi đang nỗ lực khắc phục để đạt được mục tiêu phát triển nông nghiệp bền vững của tỉnh."
+    },
+    {
+      "speaker": "Nguyễn",
+      "line": "Cảm ơn ông Nguyễn Văn A đã chia sẻ những thông tin bổ ích. Tóm lại, Quyết định 17/2021/QĐ-UBND  đã làm rõ vai trò quan trọng của Chi cục Trồng trọt và Bảo vệ thực vật trong việc phát triển nông nghiệp bền vững tại Lào Cai,  từ tham mưu chính sách đến giám sát thực hiện, góp phần đảm bảo an ninh lương thực và phát triển kinh tế địa phương.  Cảm ơn ông và hẹn gặp lại trong các chương trình sau!"
+    }
+  ]
+}
