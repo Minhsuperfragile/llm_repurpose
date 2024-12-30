@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,     % Enable colored links
+    linkcolor=blue,      % Color for internal links
+    citecolor=blue,      % Color for citations
+    filecolor=blue,      % Color for file links
+    urlcolor=blue        % Color for URLs
+}
+\usepackage{indentfirst} % Indent the first paragraph after sections
+\setlength{\parindent}{2em} % Adjust the length (e.g., 2em)
+
+\title{Experience with Podcast LM}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Generation with Gemini}
+
+I used a \href{https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Quyet-dinh-17-2021-QD-UBND-vi-tri-chuc-nang-Chi-cuc-Trong-trot-va-Bao-ve-thuc-vat-tinh-Lao-Cai-481420.aspx}{vietnamese law document} as an input for Gemini to generate a podcast script with a host and a guest.
+The input document is about duties and missions of a department in Lao Cai. See result in this \href{https://github.com/Minhsuperfragile/llm_repurpose/blob/main/podcast_creation/gemini_vn_response.txt}{github file}. 
+In the overall, I think Gemini did a good job in summary, create a script with mix of tones, verbal fillers as in a normal discussion. 
+
+\section{Generation with Llama3.3}
+I used the same document and prompt as used for Gemini, but Llama3.3 failed to create a script. It instead give us just a summary of the document \href{https://github.com/Minhsuperfragile/llm_repurpose/blob/main/podcast_creation/llama3.3_vn_response.txt}{(result)}.
+But if we take a look at the summary and the result of Gemini, we can see that they both captured what the document is about. I think we can break down the system prompt into summary and script generation as 2 separeted tasks, and run through Llama3.3 2 times.
+\section{Voice Generation}
+
+The primary challenge with voice generation was achieving a natural and expressive tone. I found 2 open-source models to serve out needs.
+
+One is \href{https://huggingface.co/facebook/mms-tts-vie}{facebook/mms-tts-vie}, I generated \href{https://github.com/Minhsuperfragile/llm_repurpose/blob/main/podcast_creation/output.wav}{an audio file } from Gemini's script. 
+There are 2 problems with this model, the voice is not intersting and there is only 1 male voice. 
+
+Another model is \href{https://huggingface.co/capleaf/viXTTS}{capleaf/viXTTStext}. This model is extended from \href{https://huggingface.co/coqui/XTTS-v2}{coqui/XTTS-v2}, it is very good with voice tones, and we can generate voice with our own voice sample. 
+But a huge problem is that Coqui is shutting down since January 2024. The model is still in an unstable state and I can't run it on local, even on Google colab, it is not stable, usually crash kernel. 
+
+\end{document}
