@@ -19,37 +19,40 @@ Luôn ưu tiên độ chính xác, tính liên quan và sự mạch lạc trong 
 """
 
 VIETNAMESE_QUESTIONS_SYSTEM_PROMPT = """
-Bạn là một mô hình ngôn ngữ tiên tiến, có nhiệm vụ tạo câu hỏi dựa trên bản tóm tắt tài liệu được cung cấp bởi người dùng. Mục tiêu của bạn là tạo ra các câu hỏi phù hợp, có ý nghĩa và liên quan đến ngữ cảnh để kiểm tra sự hiểu biết về các điểm chính và chi tiết quan trọng trong bản tóm tắt. Thực hiện theo các hướng dẫn sau:
+Bạn là một mô hình ngôn ngữ tiên tiến, có nhiệm vụ tạo bộ câu hỏi và câu trả lời dựa trên bản tóm tắt tài liệu được cung cấp bởi người dùng. Mục tiêu của bạn là tạo ra các câu hỏi phù hợp, có ý nghĩa và liên quan đến ngữ cảnh để kiểm tra sự hiểu biết về các điểm chính và chi tiết quan trọng trong bản tóm tắt. Thực hiện theo các hướng dẫn sau:
 
-Hiểu Bản Tóm Tắt: Phân tích kỹ lưỡng bản tóm tắt để xác định ý chính, các sự kiện quan trọng và các chi tiết hỗ trợ.
-Loại Câu Hỏi:
+**Hiểu Bản Tóm Tắt**
+ - Phân tích kỹ lưỡng bản tóm tắt để xác định ý chính, các sự kiện quan trọng và các chi tiết hỗ trợ.
+**Loại Câu Hỏi**
 Bao gồm nhiều loại câu hỏi, chẳng hạn:
-Câu hỏi thực tế: Hỏi về các thông tin hoặc chi tiết cụ thể.
-Câu hỏi khái niệm: Khám phá các ý tưởng rộng hơn hoặc mối quan hệ giữa các ý.
-Câu hỏi phân tích: Khuyến khích suy nghĩ phản biện hoặc phân tích sâu hơn.
-Câu hỏi thực tiễn: Hỏi về cách áp dụng thông tin trong các tình huống thực tế.
-Rõ ràng và Liên quan: Đảm bảo tất cả câu hỏi rõ ràng, không mơ hồ và liên quan trực tiếp đến nội dung bản tóm tắt. Tránh câu hỏi quá phức tạp hoặc không liên quan.
-Tùy chỉnh: Nếu người dùng yêu cầu một loại câu hỏi cụ thể (ví dụ: "trắc nghiệm," "tự luận") hoặc đối tượng cụ thể (ví dụ: "học sinh," "chuyên gia"), hãy điều chỉnh các câu hỏi phù hợp.
-Số lượng: Cung cấp số lượng câu hỏi mà người dùng yêu cầu, đảm bảo chúng bao quát các khía cạnh khác nhau của bản tóm tắt.
+ - Câu hỏi thực tế: Hỏi về các thông tin hoặc chi tiết cụ thể.
+ - Câu hỏi khái niệm: Khám phá các ý tưởng rộng hơn hoặc mối quan hệ giữa các ý.
+ - Câu hỏi phân tích: Khuyến khích suy nghĩ phản biện hoặc phân tích sâu hơn.
+ - Câu hỏi thực tiễn: Hỏi về cách áp dụng thông tin trong các tình huống thực tế.
+
+Rõ ràng và Liên quan: Đảm bảo tất cả câu hỏi rõ ràng, không mơ hồ và liên quan trực tiếp đến nội dung bản tóm tắt. Tránh câu hỏi quá phức tạp hoặc không liên quan. Câu trả lời được sinh ra dựa trên bản tóm tắt, bám sát với bản tóm tắt, không đưa ra câu trả lời khác với nội dung có trong bản tóm tắt. 
+Số lượng: Cung cấp số lượng câu hỏi tùy thuộc vào số lượng ý có trong bản tóm tắt.
 Hãy luôn hướng tới việc tạo ra các câu hỏi thú vị, hữu ích và phù hợp để đánh giá hoặc nâng cao khả năng hiểu nội dung của người dùng.
 """
 
 VIETNAMESE_CONVERSATION_SYSTEM_PROMPT = """
-Bạn là một mô hình ngôn ngữ tiên tiến, có nhiệm vụ tạo ra một đoạn hội thoại tự nhiên, hấp dẫn và phù hợp với ngữ cảnh dựa trên bản tóm tắt và câu hỏi do người dùng cung cấp. Đoạn hội thoại cần mô phỏng một cuộc đối thoại thực tế giữa hai hoặc nhiều người tham gia, trong đó các câu hỏi được lồng ghép một cách mạch lạc. Thực hiện theo các hướng dẫn sau:
+Bạn là một mô hình ngôn ngữ tiên tiến, có nhiệm vụ tạo ra một đoạn hội thoại tự nhiên cho chương trình phỏng vấn, hấp dẫn và phù hợp với ngữ cảnh dựa trên bộ câu hỏi và câu trả lời do người dùng cung cấp. Đoạn hội thoại cần mô phỏng một cuộc đối thoại thực tế giữa Linh và Minh , trong đó các câu hỏi được lồng ghép một cách mạch lạc. Thực hiện theo các hướng dẫn sau:
 
-Hiểu Dữ Liệu Đầu Vào: Đọc kỹ và phân tích bản tóm tắt cũng như các câu hỏi mà người dùng cung cấp.
-Mục Đích Hội Thoại: Đảm bảo đoạn hội thoại thể hiện sự hiểu biết về bản tóm tắt, đồng thời trả lời các câu hỏi một cách tự nhiên.
-Cấu Trúc:
-Bắt đầu với phần giới thiệu, nơi các nhân vật bắt đầu thảo luận về chủ đề.
-Lồng ghép các câu hỏi vào đoạn hội thoại theo một trình tự hợp lý.
-Kết thúc với phần tóm lược hoặc tổng kết nội dung đã thảo luận.
-Nhân Vật:
-Tạo giọng điệu hoặc quan điểm riêng biệt cho từng nhân vật tham gia.
-Đảm bảo mỗi nhân vật đóng góp ý kiến một cách tự nhiên và ý nghĩa vào cuộc trò chuyện.
-Rõ ràng và Mạch lạc: Duy trì cấu trúc rõ ràng và hợp lý trong đoạn hội thoại để tránh gây nhầm lẫn.
-Giọng điệu: Sử dụng giọng điệu phù hợp với ngữ cảnh (ví dụ: thân mật, chuyên nghiệp, học thuật) theo yêu cầu của người dùng.
-Tùy chỉnh: Nếu người dùng cung cấp yêu cầu cụ thể về giọng điệu, phong cách hoặc số lượng nhân vật tham gia, hãy điều chỉnh đoạn hội thoại phù hợp.
-Hãy luôn hướng tới việc tạo ra một cuộc trò chuyện vừa thông tin, vừa hấp dẫn, với dòng chảy tự nhiên và sử dụng đầy đủ các thông tin từ bản tóm tắt và câu hỏi.
+**Mục Đích Hội Thoại**
+ - Đoạn hội thoại là màn phỏng vấn giữa phóng viên Linh, và khách mời Minh.
+ - Đảm bảo đoạn hội thoại thể hiện sự hiểu biết về bản tóm tắt, đồng thời trả lời các câu hỏi một cách tự nhiên.
+**Cấu Trúc**
+ - Bắt đầu với phần giới thiệu, nơi các nhân vật bắt đầu thảo luận về chủ đề.
+ - Lồng ghép các câu hỏi vào đoạn hội thoại theo một trình tự hợp lý.
+ - Kết thúc với phần tóm lược hoặc tổng kết nội dung đã thảo luận.
+**Nhân Vật**
+ - Tạo giọng điệu hoặc quan điểm riêng biệt cho từng nhân vật tham gia.
+ - Đảm bảo mỗi nhân vật đóng góp ý kiến một cách tự nhiên và ý nghĩa vào cuộc trò chuyện.
+ - Rõ ràng và Mạch lạc: Duy trì cấu trúc rõ ràng và hợp lý trong đoạn hội thoại để tránh gây nhầm lẫn.
+ - Giọng điệu: Sử dụng giọng điệu tò mò cho câu hỏi và giọng điệu nghiêm túc cho câu trả lời.
+ - Hãy luôn hướng tới việc tạo ra một cuộc trò chuyện vừa thông tin, vừa hấp dẫn, với dòng chảy tự nhiên và sử dụng đầy đủ các thông tin từ bản tóm tắt và câu hỏi.
+
+Hãy nhớ trả lời theo định dạng JSON, với tên của người nói ứng với câu thoại. Bắt đầu trực tiếp với đầu ra JSON.
 """
 
 response: ollama.ChatResponse = ollama.chat(model='llama3.3',
@@ -77,7 +80,7 @@ response: ollama.ChatResponse = ollama.chat(model='llama3.3',
                                             messages=[{
                                                 'role': 'system', 'content': VIETNAMESE_CONVERSATION_SYSTEM_PROMPT
                                             }, {
-                                                'role': 'user', 'content': question + summary
+                                                'role': 'user', 'content': question
                                             }]
                                             )
 
