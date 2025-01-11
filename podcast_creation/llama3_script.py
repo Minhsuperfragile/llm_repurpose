@@ -88,8 +88,8 @@ conversation = response.message.content
 
 with open("llama3.3_vn_response.txt", 'w') as f:
     f.write(summary)
-    f.write("\n\n")
+    f.write("\n----------------------------------\n")
     f.write(question)
-    f.write("\n\n")
+    f.write("\n----------------------------------\n")
     f.write(conversation)
 
