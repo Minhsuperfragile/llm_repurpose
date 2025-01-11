@@ -55,7 +55,9 @@ Bạn là một mô hình ngôn ngữ tiên tiến, có nhiệm vụ tạo ra m�
 Hãy nhớ trả lời theo định dạng JSON, với tên của người nói ứng với câu thoại. Bắt đầu trực tiếp với đầu ra JSON.
 """
 
-response: ollama.ChatResponse = ollama.chat(model='llama3.3',
+MODEL_NAME = "llama3.3:70b-instruct-q8_0"
+
+response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
                                             messages=[{
                                                 'role': 'system', 'content': VIETNAMESE_SUMMARY_SYSTEM_PROMPT
                                             }, {
@@ -66,7 +68,7 @@ response: ollama.ChatResponse = ollama.chat(model='llama3.3',
 
 summary = response.message.content
 
-response: ollama.ChatResponse = ollama.chat(model='llama3.3',
+response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
                                             messages=[{
                                                 'role': 'system', 'content': VIETNAMESE_QUESTIONS_SYSTEM_PROMPT
                                             }, {
@@ -76,7 +78,7 @@ response: ollama.ChatResponse = ollama.chat(model='llama3.3',
 
 question = response.message.content
 
-response: ollama.ChatResponse = ollama.chat(model='llama3.3',
+response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
                                             messages=[{
                                                 'role': 'system', 'content': VIETNAMESE_CONVERSATION_SYSTEM_PROMPT
                                             }, {
@@ -86,7 +88,7 @@ response: ollama.ChatResponse = ollama.chat(model='llama3.3',
 
 conversation = response.message.content
 
-with open("llama3.3_vn_response.txt", 'w') as f:
+with open("llama3.3_Q8_response.txt", 'w') as f:
     f.write(summary)
     f.write("\n----------------------------------\n")
     f.write(question)
