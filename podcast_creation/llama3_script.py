@@ -55,7 +55,8 @@ Bạn là một mô hình ngôn ngữ tiên tiến, có nhiệm vụ tạo ra m�
 Hãy nhớ trả lời theo định dạng JSON, với tên của người nói ứng với câu thoại. Bắt đầu trực tiếp với đầu ra JSON.
 """
 
-MODEL_NAME = "llama3.3:70b-instruct-q8_0"
+#MODEL_NAME = "llama3.3:70b-instruct-q8_0"
+MODEL_NAME = "llama3.3"
 
 response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
                                             messages=[{
@@ -88,7 +89,7 @@ response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
 
 conversation = response.message.content
 
-with open("llama3.3_Q8_response.txt", 'w') as f:
+with open("llama3.3_Q4_response.txt", 'w') as f:
     f.write(summary)
     f.write("\n----------------------------------\n")
     f.write(question)
