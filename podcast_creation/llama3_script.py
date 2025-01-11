@@ -84,6 +84,9 @@ response: ollama.ChatResponse = ollama.chat(model='llama3.3',
 conversation = response.message.content
 
 with open("llama3.3_vn_response.txt", 'w') as f:
-    f.write(response.message.content)
-    f.write("\n" + 10*"---" + "\n")
+    f.write(summary)
+    f.write("\n\n")
+    f.write(question)
+    f.write("\n\n")
+    f.write(question)
 
