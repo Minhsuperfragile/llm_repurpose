@@ -88,5 +88,5 @@ with open("llama3.3_vn_response.txt", 'w') as f:
     f.write("\n\n")
     f.write(question)
     f.write("\n\n")
-    f.write(question)
+    f.write(conversation)
 
