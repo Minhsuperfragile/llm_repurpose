@@ -80,7 +80,7 @@ response: ollama.ChatResponse = ollama.chat(model='llama3.3',
                                             messages=[{
                                                 'role': 'system', 'content': VIETNAMESE_CONVERSATION_SYSTEM_PROMPT
                                             }, {
-                                                'role': 'user', 'content': question + summary
+                                                'role': 'user', 'content': question
                                             }]
                                             )
 
@@ -91,5 +91,5 @@ with open("llama3.3_vn_response.txt", 'w') as f:
     f.write("\n\n")
     f.write(question)
     f.write("\n\n")
-    f.write(question)
+    f.write(conversation)
 
