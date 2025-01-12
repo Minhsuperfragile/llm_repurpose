@@ -7,3 +7,4 @@
 *.fls
 */__pycache__
 *.pickle
+.gpt.txt
