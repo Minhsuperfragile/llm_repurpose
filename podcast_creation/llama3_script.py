@@ -7,7 +7,8 @@ pdf_text ="ỦY BAN NHÂN DÂN TỈNH LÀO CAI -------- CỘNG HÒA XÃ HỘI CH
 #endregion
 
 #MODEL_NAME = "llama3.3:70b-instruct-q8_0"
-MODEL_NAME = "llama3.3"
+MODEL_NAME = "llama3.1"
+result_file = f"./results/{MODEL_NAME}_response.txt"
 
 response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
                                             messages=[{
@@ -17,7 +18,7 @@ response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
                                             }]
                                             )
 
-
+print(f"{MODEL_NAME} returned summary")
 summary = response.message.content
 
 response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
@@ -28,6 +29,7 @@ response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
                                             }]
                                             )
 
+print(f'{MODEL_NAME} returned a question set')
 question = response.message.content
 
 response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
@@ -38,9 +40,10 @@ response: ollama.ChatResponse = ollama.chat(model=MODEL_NAME,
                                             }]
                                             )
 
+print(f'{MODEL_NAME} returned a script')
 conversation = response.message.content
 
-with open("llama3.3_Q4_response.txt", 'w') as f:
+with open(result_file, 'w') as f:
     f.write(summary)
     f.write("\n----------------------------------\n")
     f.write(question)
